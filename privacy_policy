@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Octrace</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            background-color: #0d0f12;
+            @bottom-right {
+                content: "Page " counter(page) " of " counter(pages);
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                font-size: 8pt;
+                color: #4a5568;
+            }
+            @bottom-left {
+                content: "Octrace Multiplayer - Privacy Policy";
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                font-size: 8pt;
+                color: #4a5568;
+            }
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.6;
+            color: #cdd6f4;
+            background-color: #0d0f12;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Full bleed header style via negative margins */
+        .header-banner {
+            margin: -20mm -15mm 25px -15mm;
+            padding: 30px 15mm;
+            background: linear-gradient(135deg, #1e1e2e 0%, #11111b 100%);
+            border-bottom: 3px solid #ff4500;
+            text-align: center;
+        }
+
+        .header-banner h1 {
+            margin: 0;
+            font-size: 24pt;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        .header-banner h1 span {
+            color: #ff4500;
+        }
+
+        .header-banner .subtitle {
+            margin-top: 5px;
+            font-size: 10pt;
+            color: #a6adc8;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-box {
+            background-color: #181825;
+            border: 1px solid #313244;
+            border-radius: 6px;
+            padding: 12px 15px;
+            margin-bottom: 25px;
+            font-size: 9pt;
+            color: #bac2de;
+        }
+
+        .meta-box table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .meta-box td {
+            padding: 3px 0;
+        }
+
+        .meta-box td.label {
+            font-weight: bold;
+            color: #ff4500;
+            width: 120px;
+        }
+
+        h2 {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-left: 4px solid #ff4500;
+            padding-left: 10px;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #f5e0dc;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background-color: #1e1e2e;
+            border-left: 3px solid #b4befe;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 9.5pt;
+        }
+
+        .highlight-box ul {
+            margin-bottom: 0;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            border-top: 1px solid #313244;
+            padding-top: 15px;
+            font-size: 8.5pt;
+            color: #7f849c;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1><span>Oct</span>race</h1>
+        <div class="subtitle">Mobile Application Privacy Policy</div>
+    </div>
+
+    <div class="meta-box">
+        <table>
+            <tr>
+                <td class="label">Effective Date:</td>
+                <td>May 24, 2026</td>
+            </tr>
+            <tr>
+                <td class="label">Application:</td>
+                <td>Octrace (Mobile Game)</td>
+            </tr>
+            <tr>
+                <td class="label">Status:</td>
+                <td>Active / Public Release</td>
+            </tr>
+        </table>
+    </div>
+
+    <p>Welcome to <strong>Octrace</strong> ("we", "our", or "us"). We are fully committed to protecting your privacy and ensuring a transparent, secure environment for your gameplay. This Privacy Policy details the types of information we collect, how it is used, and the third-party integrations integrated into Octrace to power our monetization, advertising, and local multiplayer networks.</p>
+    
+    <p>By downloading, installing, or interacting with Octrace, you explicitly consent to the data collection and usage methodologies outlined across this document.</p>
+
+    <h2>1. Information We Collect & How It Is Used</h2>
+    <p>Octrace functions primarily as a local client application. We prioritize data minimization and do not run background registration or cloud tracking accounts unless mandatory for platform engine services.</p>
+    
+    <h3>A. Local Peer-to-Peer & Multiplayer Networking</h3>
+    <p>Octrace features a real-time multiplayer racing mode allowing players to connect dynamically. To facilitate this connection over local networks, the game utilizes:</p>
+    <ul>
+        <li><strong>Wi-Fi and Hotspot Configurations:</strong> The app interacts with your device's local network interfaces to establish a direct Peer-to-Peer (P2P) hosting infrastructure between devices.</li>
+        <li><strong>Local Network Infrastructure:</strong> Technical parameters (such as temporary internal IP addresses and device socket channels) are exchanged peer-to-peer to synchronize car coordinates, weapon deployments, and lobby configurations.</li>
+        <li><strong>Network Permissions:</strong> Depending on your operating system version, the game may prompt for Local Network Discovery or Location permissions. This permission is structurally required by the underlying OS architecture to scan for local Wi-Fi nodes or active Hotspots. <em>We do not read, log, or track your physical geolocation.</em></li>
+    </ul>
+
+    <h3>B. In-App Purchases & Virtual Economy</h3>
+    <p>The game implements an optional virtual storefront utilizing in-app purchases (IAP) handled securely via official platform payment gateways (such as Google Play Billing Services):</p>
+    <ul>
+        <li><strong>Virtual Currency (Coins):</strong> Users can buy in-game coins using real-world legal tender.</li>
+        <li><strong>Combat Upgrades:</strong> These coins are strictly used as utility tokens inside the game to purchase weapons, ammunition, and custom defensive mechanics including <strong>Bullets, Missiles, Bombs, and Break Attacks</strong>.</li>
+        <li><strong>Payment Processing:</strong> We do not collect, view, or store your debit/credit card details, banking passwords, or personal billing credentials. All transactions are securely audited and managed by the corresponding app store ecosystem (Google / Apple). We receive only encrypted tokens confirming successful transaction states to credit coins to your local profile.</li>
+    </ul>
+
+    <h2>2. Third-Party Integrations & Advertising</h2>
+    <p>To keep the core gameplay experience accessible, Octrace integrates trusted, industry-standard third-party advertising SDKs. These networks process specialized hardware identifiers to serve contextual or personalized advertisements:</p>
+    
+    <div class="highlight-box">
+        <strong>Integrated Advertising Partners:</strong>
+        <ul>
+            <li><strong>Google AdMob:</strong> Used for banner, interstitial, and app-open ad placements. AdMob evaluates device advertising IDs to ensure compliance, ad capping, and relevant delivery.</li>
+            <li><strong>Unity Ads:</strong> Used primarily for rewarded video ad formats (e.g., offering bonus in-game items or coins for viewing a clip). Unity Ads collects device characteristics to optimize video rendering streams.</li>
+        </ul>
+    </div>
+
+    <p>These external SDK vendors automatically collect anonymous technical payloads from your device when request calls are executed, including your device make/model, operating system version, mobile network carrier, language parameters, and your anonymous Advertising ID (e.g., Google AAID).</p>
+
+    <h2>3. Children’s Privacy & Safety</h2>
+    <p>Octrace is an action-driven vehicular combat racing game. It does not deliberately prompt for, extract, or archive Personally Identifiable Information (PII) from any user, including children under the age of 13. If a third-party ad framework inadvertently logs device tracking metrics from an under-age user, we strongly support taking active optimization adjustments or utilizing operating system privacy switches to mask advertisement trackers permanently.</p>
+
+    <h2>4. Data Retention and Deletion</h2>
+    <p>All core gameplay progression, earned coin balances, and unlocked item inventories (Bullets, Missiles, Bombs, Break Attacks) are cached safely inside your device's protected local storage sandbox. Uninstalling Octrace will wipe this local storage footprint immediately. Because we utilize third-party billing and ad services, any historical transaction invoices are bound explicitly to your primary Google/Apple operating accounts and follow their independent system retention policies.</p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We reserve the right to revise or modify this policy statement as we scale game mechanics, deploy server variations, or adapt to shifting statutory mobile privacy regulations. We recommend reviewing this document periodically to stay informed regarding updates.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>For any inquiries, clarifications, or technical compliance queries concerning this Privacy Policy, please reach out to us via your developer dashboard channel or established contact options under our publisher umbrella.</p>
+
+    <div class="footer-note">
+        Distributed by Cubechains Ecosystem © 2026. All Rights Reserved. All unique game code, text assets, and "Octrace" branding are the exclusive property of the developer.
+    </div>
+
+</body>
+</html>
