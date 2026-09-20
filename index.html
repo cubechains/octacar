@@ -3,235 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Ak.ai</title>
+    <title>Privacy Policy - Octacar</title>
     <style>
-        :root {
-            --primary: #4f46e5;
-            --primary-light: #818cf8;
-            --bg-color: #0b0f19;
-            --card-bg: #111827;
-            --card-border: #1f2937;
-            --text-main: #f3f4f6;
-            --text-muted: #9ca3af;
-            --accent-glow: rgba(79, 70, 229, 0.15);
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            background-color: #0d0f12;
+            @bottom-right {
+                content: "Page " counter(page) " of " counter(pages);
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                font-size: 8pt;
+                color: #4a5568;
+            }
+            @bottom-left {
+                content: "Octacar Multiplayer - Privacy Policy";
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                font-size: 8pt;
+                color: #4a5568;
+            }
         }
+
         *, *::before, *::after {
             box-sizing: border-box;
         }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.7;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.6;
+            color: #cdd6f4;
+            background-color: #0d0f12;
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 840px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        header {
-            background: linear-gradient(135deg, #1e1b4b 0%, #111827 100%);
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            padding: 40px 30px;
+
+        /* Full bleed header style via negative margins */
+        .header-banner {
+            margin: -20mm -15mm 25px -15mm;
+            padding: 30px 15mm;
+            background: linear-gradient(135deg, #1e1e2e 0%, #11111b 100%);
+            border-bottom: 3px solid #ff4500;
             text-align: center;
-            margin-bottom: 32px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
         }
-        h1 {
-            color: var(--text-main);
-            font-size: 2.4rem;
-            margin: 0 0 12px 0;
-            letter-spacing: -0.025em;
-        }
-        .app-meta {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: rgba(79, 70, 229, 0.1);
-            border: 1px solid rgba(129, 140, 248, 0.2);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: var(--primary-light);
-            font-family: monospace;
-            margin-bottom: 12px;
-        }
-        .last-updated {
-            color: var(--text-muted);
-            font-size: 0.875rem;
+
+        .header-banner h1 {
             margin: 0;
+            font-size: 24pt;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            text-transform: uppercase;
         }
-        section {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 14px;
-            padding: 30px;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        
+        .header-banner h1 span {
+            color: #ff4500;
         }
+
+        .header-banner .subtitle {
+            margin-top: 5px;
+            font-size: 10pt;
+            color: #a6adc8;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-box {
+            background-color: #181825;
+            border: 1px solid #313244;
+            border-radius: 6px;
+            padding: 12px 15px;
+            margin-bottom: 25px;
+            font-size: 9pt;
+            color: #bac2de;
+        }
+
+        .meta-box table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .meta-box td {
+            padding: 3px 0;
+        }
+
+        .meta-box td.label {
+            font-weight: bold;
+            color: #ff4500;
+            width: 120px;
+        }
+
         h2 {
-            color: var(--primary-light);
-            font-size: 1.35rem;
-            margin-top: 0;
-            margin-bottom: 16px;
-            border-bottom: 1px solid var(--card-border);
-            padding-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            font-size: 13pt;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-left: 4px solid #ff4500;
+            padding-left: 10px;
+            page-break-after: avoid;
         }
-        p, li {
-            color: var(--text-muted);
-            font-size: 0.975rem;
-            margin-bottom: 12px;
-        }
-        ul {
-            padding-left: 20px;
-            margin-top: 8px;
-            margin-bottom: 12px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        strong {
-            color: var(--text-main);
-        }
-        .highlight-box {
-            background: var(--accent-glow);
-            border-left: 4px solid var(--primary);
-            padding: 16px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-            color: var(--text-main);
-            font-size: 0.975rem;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: var(--text-muted);
-            font-size: 0.875rem;
-            border-top: 1px solid var(--card-border);
-            padding-top: 24px;
-        }
-        .contact-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px dashed var(--card-border);
-            border-radius: 10px;
-            padding: 16px 20px;
-            margin-top: 16px;
-            text-align: center;
-        }
-        .contact-card a {
-            color: var(--primary-light);
-            text-decoration: none;
+
+        h3 {
+            font-size: 11pt;
             font-weight: 600;
+            color: #f5e0dc;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            page-break-after: avoid;
         }
-        .contact-card a:hover {
-            text-decoration: underline;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background-color: #1e1e2e;
+            border-left: 3px solid #b4befe;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 9.5pt;
+        }
+
+        .highlight-box ul {
+            margin-bottom: 0;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            border-top: 1px solid #313244;
+            padding-top: 15px;
+            font-size: 8.5pt;
+            color: #7f849c;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Privacy Policy</h1>
-            <div class="app-meta">Ak.ai &bull; Developed by CubeChains</div>
-            <p class="last-updated">Effective Date: August 24, 2026</p>
-        </header>
+    <div class="header-banner">
+        <h1><span>Oct</span>race</h1>
+        <div class="subtitle">Mobile Application Privacy Policy</div>
+    </div>
 
-        <section>
-            <h2>1. Introduction & Overview</h2>
-            <p>Welcome to <strong>Ak.ai</strong> ("we", "our", or "us"), a free mobile application developed by <strong>CubeChains</strong>. This service is provided at no cost and is intended for use as is. This page informs you of our policies regarding the collection, use, and disclosure of information when you use our application.</p>
-            <p>By using Ak.ai, you agree to the collection and use of information in relation to this policy. Our core architecture is engineered with privacy as a foundational principle—prioritizing local, on-device data processing.</p>
-            <div class="highlight-box">
-                <strong>Core Privacy Commitment:</strong> All grammar suggestions and text optimizations occur locally on your device hardware while running in float mode. We do not harvest, track, or transmit your text inputs or personal inputs to external cloud servers.
-            </div>
-        </section>
+    <div class="meta-box">
+        <table>
+            <tr>
+                <td class="label">Effective Date:</td>
+                <td>May 24, 2026</td>
+            </tr>
+            <tr>
+                <td class="label">Application:</td>
+                <td>Octacar (Mobile Game)</td>
+            </tr>
+            <tr>
+                <td class="label">Status:</td>
+                <td>Active / Public Release</td>
+            </tr>
+        </table>
+    </div>
 
-        <section>
-            <h2>2. Information Collection and Use</h2>
-            <p>To provide floating text optimization features, Ak.ai processes user inputs locally on your device:</p>
-            <ul>
-                <li><strong>Floating Text Optimization:</strong> Ak.ai operates as an offline text optimization tool featuring a floating mode. Users input text into the floating box, and the app processes this input locally to provide optimized grammar fixes and text suggestions.</li>
-                <li><strong>Data Processing & Transmission:</strong> We do <strong>not</strong> collect, store, transmit, or upload user input text, typed content, or optimized suggestions to any external developer server. All processing happens entirely within your local device environment.</li>
-                <li><strong>Personal Information:</strong> Ak.ai does not require users to create an account and does not collect personally identifiable information such as names, email addresses, phone numbers, or precise locations.</li>
-            </ul>
-            <div class="highlight-box">
-                <strong>Crucial Note:</strong> All text inputs entered into the floating optimization box remain strictly on your device. This data is never transmitted to external servers, cloud databases, or shared with any third parties by CubeChains.
-            </div>
-        </section>
+    <p>Welcome to <strong>Octacar</strong> ("we", "our", or "us"). We are fully committed to protecting your privacy and ensuring a transparent, secure environment for your gameplay. This Privacy Policy details the types of information we collect, how it is used, and the third-party integrations integrated into Octacar to power our monetization, advertising, and local multiplayer networks.</p>
+    
+    <p>By downloading, installing, or interacting with Octacar, you explicitly consent to the data collection and usage methodologies outlined across this document.</p>
 
-        <section>
-            <h2>3. Third-Party Services</h2>
-            <p>The app may use trusted third-party services for essential utility functions such as app distribution, optional monetization (advertisements), and performance diagnostics. These third-party providers may collect limited technical metadata as governed by their respective privacy policies:</p>
-            <ul>
-                <li><strong>Google Play Services</strong></li>
-                <li><strong>AdMob</strong></li>
-                <li><strong>Unity Ads</strong></li>
-            </ul>
-            <p>We encourage users to review the privacy policies of these third-party service providers for further clarity on their data handling practices.</p>
-        </section>
+    <h2>1. Information We Collect & How It Is Used</h2>
+    <p>Octacar functions primarily as a local client application. We prioritize data minimization and do not run background registration or cloud tracking accounts unless mandatory for platform engine services.</p>
+    
+    <h3>A. Local Peer-to-Peer & Multiplayer Networking</h3>
+    <p>Octacar features a real-time multiplayer racing mode allowing players to connect dynamically. To facilitate this connection over local networks, the game utilizes:</p>
+    <ul>
+        <li><strong>Wi-Fi and Hotspot Configurations:</strong> The app interacts with your device's local network interfaces to establish a direct Peer-to-Peer (P2P) hosting infrastructure between devices.</li>
+        <li><strong>Local Network Infrastructure:</strong> Technical parameters (such as temporary internal IP addresses and device socket channels) are exchanged peer-to-peer to synchronize car coordinates, weapon deployments, and lobby configurations.</li>
+        <li><strong>Network Permissions:</strong> Depending on your operating system version, the game may prompt for Local Network Discovery or Location permissions. This permission is structurally required by the underlying OS architecture to scan for local Wi-Fi nodes or active Hotspots. <em>We do not read, log, or track your physical geolocation.</em></li>
+    </ul>
 
-        <section>
-            <h2>4. Log Data & Crash Diagnostics</h2>
-            <p>In the event of an unexpected app error or crash, Ak.ai may collect non-personal Log Data via integrated third-party crash reporting tools. This technical diagnostics data may include:</p>
-            <ul>
-                <li>Device model and hardware identifiers</li>
-                <li>Android operating system version</li>
-                <li>App usage timestamps</li>
-                <li>Stack traces and error diagnostics</li>
-            </ul>
-            <p>This information is used strictly and exclusively to diagnose bugs, enhance app stability, and improve overall performance and reliability.</p>
-        </section>
+    <h3>B. In-App Purchases & Virtual Economy</h3>
+    <p>The game implements an optional virtual storefront utilizing in-app purchases (IAP) handled securely via official platform payment gateways (such as Google Play Billing Services):</p>
+    <ul>
+        <li><strong>Virtual Currency (Coins):</strong> Users can buy in-game coins using real-world legal tender.</li>
+        <li><strong>Combat Upgrades:</strong> These coins are strictly used as utility tokens inside the game to purchase weapons, ammunition, and custom defensive mechanics including <strong>Bullets, Missiles, Bombs, and Break Attacks</strong>.</li>
+        <li><strong>Payment Processing:</strong> We do not collect, view, or store your debit/credit card details, banking passwords, or personal billing credentials. All transactions are securely audited and managed by the corresponding app store ecosystem (Google / Apple). We receive only encrypted tokens confirming successful transaction states to credit coins to your local profile.</li>
+    </ul>
 
-        <section>
-            <h2>5. Cookies & Tracking Technologies</h2>
-            <p>Ak.ai does not deploy cookies directly within the application. However, third-party libraries embedded in the app (such as advertising or analytics SDKs) may use cookies or similar local tracking identifiers to manage their services. Users can manage or restrict ad tracking through their Android device system settings.</p>
-        </section>
+    <h2>2. Third-Party Integrations & Advertising</h2>
+    <p>To keep the core gameplay experience accessible, Octacar integrates trusted, industry-standard third-party advertising SDKs. These networks process specialized hardware identifiers to serve contextual or personalized advertisements:</p>
+    
+    <div class="highlight-box">
+        <strong>Integrated Advertising Partners:</strong>
+        <ul>
+            <li><strong>Google AdMob:</strong> Used for banner, interstitial, and app-open ad placements. AdMob evaluates device advertising IDs to ensure compliance, ad capping, and relevant delivery.</li>
+            <li><strong>Unity Ads:</strong> Used primarily for rewarded video ad formats (e.g., offering bonus in-game items or coins for viewing a clip). Unity Ads collects device characteristics to optimize video rendering streams.</li>
+        </ul>
+    </div>
 
-        <section>
-            <h2>6. App Features & Content Disclaimer</h2>
-            <p>Ak.ai provides floating grammar optimization and text suggestion utilities designed to assist users with writing improvements.</p>
-            <p>All optimized grammar fixes and text suggestions are provided strictly for <strong>assistance and productivity purposes only</strong>. We make no guarantees regarding the absolute accuracy, completeness, or reliability of automated text outputs, and users maintain full responsibility for how they review and utilize the suggested text.</p>
-        </section>
+    <p>These external SDK vendors automatically collect anonymous technical payloads from your device when request calls are executed, including your device make/model, operating system version, mobile network carrier, language parameters, and your anonymous Advertising ID (e.g., Google AAID).</p>
 
-        <section>
-            <h2>7. Data Security</h2>
-            <p>We value your trust in choosing Ak.ai and strive to protect your application environment using commercially acceptable security standards. Because text optimization operations are processed locally on your device, your core text inputs remain securely within your device's private app sandbox.</p>
-            <p>However, no electronic transmission method or digital storage medium is 100% secure; absolute security cannot be guaranteed. For optimum security, users are advised to download Ak.ai exclusively from the official Google Play Store.</p>
-        </section>
+    <h2>3. Children’s Privacy & Safety</h2>
+    <p>Octacar is an action-driven vehicular combat racing game. It does not deliberately prompt for, extract, or archive Personally Identifiable Information (PII) from any user, including children under the age of 13. If a third-party ad framework inadvertently logs device tracking metrics from an under-age user, we strongly support taking active optimization adjustments or utilizing operating system privacy switches to mask advertisement trackers permanently.</p>
 
-        <section>
-            <h2>8. Children’s Privacy</h2>
-            <p>Ak.ai does not knowingly target or solicit personal information from children under the age of 13. We do not knowingly collect personal identity data from minors. If a parent or guardian discovers that a child has provided personal information to the application, please reach out to us immediately so we can take appropriate remedial action.</p>
-        </section>
+    <h2>4. Data Retention and Deletion</h2>
+    <p>All core gameplay progression, earned coin balances, and unlocked item inventories (Bullets, Missiles, Bombs, Break Attacks) are cached safely inside your device's protected local storage sandbox. Uninstalling Octacar will wipe this local storage footprint immediately. Because we utilize third-party billing and ad services, any historical transaction invoices are bound explicitly to your primary Google/Apple operating accounts and follow their independent system retention policies.</p>
 
-        <section>
-            <h2>9. Data Retention and Deletion</h2>
-            <p><strong>Data Retention:</strong> We do not store, persist, or retain any user text inputs or personal data on our servers. All computational operations and text optimizations are conducted locally on your device hardware and are not persisted beyond your active usage session.</p>
-            <p><strong>Data Deletion:</strong> Because we do not harvest or store user text inputs on external servers, there is no requirement for a complex data deletion request workflow. If you wish to purge all locally cached data or settings associated with Ak.ai, you can do so instantly by simply <strong>uninstalling the application</strong> or clearing app data from your Android device system settings.</p>
-        </section>
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We reserve the right to revise or modify this policy statement as we scale game mechanics, deploy server variations, or adapt to shifting statutory mobile privacy regulations. We recommend reviewing this document periodically to stay informed regarding updates.</p>
 
-        <section>
-            <h2>10. Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy periodically to reflect feature expansions, studio updates, or compliance requirements. Any modifications will be posted directly on this page with a revised effective date. Users are encouraged to review this policy from time to time.</p>
-        </section>
+    <h2>6. Contact Us</h2>
+    <p>For any inquiries, clarifications, or technical compliance queries concerning this Privacy Policy, please reach out to us via your developer dashboard channel or established contact options under our publisher umbrella.</p>
 
-        <section>
-            <h2>11. Contact Us</h2>
-            <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or how your data is handled, please feel free to contact us:</p>
-            <div class="contact-card">
-                📧 Email: <a href="mailto:chainscube@gmail.com">chainscube@gmail.com</a>
-            </div>
-        </section>
-
-        <div class="footer">
-            <p>&copy; 2026 CubeChains / Ak.ai. All rights reserved.</p>
-        </div>
+    <div class="footer-note">
+        Distributed by Cubechains Ecosystem © 2026. All Rights Reserved. All unique game code, text assets, and "Octacar" branding are the exclusive property of the developer.
     </div>
 
 </body>
